@@ -1,0 +1,43 @@
+<head>
+    <meta charset="utf-8">
+    <script src="draw.js" defer></script>
+</head>
+<body>
+    <canvas id="canvas" width='800' height='800'></canvas>
+    <div>
+    顏色：<input id="color" type="color">
+    粗細：<input id="lineWidth" type="range" min="1" max="20" step="1" />
+    <p>Value: <output id="value"></output></p>
+</div>
+<!-- 工具 -->
+<button id="pen">畫筆</button>
+<button id="eraser">橡皮擦</button>
+<button id="undo">復原</button>
+<button id="redo">取消復原</button>
+<button id="clear">清除</button>
+
+<!-- 筆刷樣式 -->
+<label>Line Cap:</label>
+<select id="lineCap">
+  <option value="round">round</option>
+  <option value="butt">butt</option>
+  <option value="square">square</option>
+</select>
+
+<label>Line Join:</label>
+<select id="lineJoin">
+  <option value="round">round</option>
+  <option value="bevel">bevel</option>
+  <option value="miter">miter</option>
+</select>
+
+<!-- 顏色與粗細 -->
+<input type="color" id="color" value="#000000">
+<input type="range" id="lineWidth" min="1" max="30" value="5">
+<span id="value">5</span>
+
+<!-- 圖片生成 -->
+<button id="toshow">產生圖片</button>
+<img id="show">
+
+</body>

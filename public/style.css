@@ -1,0 +1,49 @@
+h1{
+	color: #6fbb9a;
+	text-align: center ;
+	font-size: 250%;
+}
+h2{
+	color: #6fbb9a;
+    text-align: center ;
+	border: #94c8b1 1px dotted;
+	border-left: #d0e35b 10px solid;
+	padding: 5px 20px;
+	margin-bottom: 0;
+    font-family: "Monaco", Monospace;
+}
+p{
+    font-family: "Monaco", Monospace;
+}
+body{
+	background-position: center;
+	background-color: #fbf9cc;
+	background-size: 600px ;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+}
+a {
+  font-weight: bold;
+}
+a:link {
+  color: hotpink;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: hotpink;
+}
+a:active {
+  color: blue;
+}
+#main{
+	width: 798px;
+	margin: 40px auto;
+	padding: 40px 80px;
+	border: #f6bb9e 1px solid;
+	background-color: #fff;
+}
+

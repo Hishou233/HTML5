@@ -45,9 +45,9 @@ app.post('/add-message', (req, res) => {
       return;
     }   
     console.log('一則新留言已新增，ID:', results.insertId);
-    // 新增成功後，導回首頁 (/)
-    // 瀏覽器會重新載入 index.html，並觸發 <script> 重新載入資料
-    res.redirect('/');
+    // 新增成功後，導回guestbook.html (/guestbook.html)
+    // 瀏覽器會重新載入 guestbook.html，並觸發 <script> 重新載入資料
+    res.redirect('/guestbook.html');
   });
 });
 // --- 5. 啟動伺服器 ---
