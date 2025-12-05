@@ -17,7 +17,7 @@ p{
 }
 body{
 	background-position: center;
-	background-color: #fbf9cc;
+	background-color: #fffcdf;
 	background-size: 600px ;
 	background-repeat: no-repeat;
 	background-attachment: fixed; 
@@ -30,7 +30,7 @@ a:link {
 }
 
 a:visited {
-  color: green;
+  color: rgb(57, 204, 57);
 }
 
 a:hover {
@@ -43,7 +43,34 @@ a:active {
 	width: 798px;
 	margin: 40px auto;
 	padding: 40px 80px;
-	border: #f6bb9e 1px solid;
+	border: #f69e9e 1px solid;
 	background-color: #fff;
 }
 
+/* Add a light green background color to the top navigation */
+.topnav {
+  background-color: #6fbb9a;  /* Matching the color of h1 and h2 */
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #fffcdf; /* Light text to contrast against the green background */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: hotpink;  /* Hotpink hover effect from the body a style */
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #d0e35b;  /* Bright yellow-green to match the active link style */
+  color: white;
+}
