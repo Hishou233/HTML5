@@ -1,0 +1,128 @@
+/* ====== 主體背景與字體 ====== */
+body {
+    background-position: center;
+    background-color: #fffcdf;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Monaco", "微軟正黑體", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ====== 標題 ====== */
+h1 {
+    color: #6fbb9a;
+    text-align: center;
+    font-size: 250%;
+}
+
+h3 {
+    color: #6fbb9a;
+    border: #94c8b1 1px dotted;
+    border-left: #d0e35b 10px solid;
+    padding: 5px 20px;
+    font-family: "Monaco", Monospace;
+    background-color: #fff;
+}
+
+/* ====== topnav（套用你的主頁風格） ====== */
+.topnav {
+    background-color: #6fbb9a;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.topnav a {
+    float: left;
+    color: #fffcdf;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: hotpink;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: #d0e35b;
+    color: white;
+}
+
+/* ====== 留言表單容器 ====== */
+.form-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    border: #f69e9e 1px solid;
+    margin-bottom: 30px;
+}
+
+/* ====== 表單欄位 ====== */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #6fbb9a;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #94c8b1;
+    border-radius: 6px;
+    font-family: "Monaco", "微軟正黑體";
+    background-color: #fffcdf;
+}
+
+/* ====== 按鈕 ====== */
+button {
+    background-color: #6fbb9a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.25s;
+}
+
+button:hover {
+    background-color: hotpink;
+}
+
+button:active {
+    background-color: #d0e35b;
+}
+
+/* ====== 留言列表區域 ====== */
+.message-item {
+    border: #94c8b1 1px dotted;
+    border-left: #d0e35b 10px solid;
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    font-family: "Monaco", "微軟正黑體";
+}
+
+.message-item small {
+    color: #6fbb9a;
+    display: block;
+    margin-top: 5px;
+}
+
+/* ====== 分隔線 ====== */
+hr {
+    border: none;
+    border-top: 1px solid #f69e9e;
+    margin: 30px 0;
+}

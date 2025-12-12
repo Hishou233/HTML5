@@ -1,0 +1,108 @@
+/* ========= 主頁原有風格延續 ========= */
+h1{
+	color: #6fbb9a;
+	text-align: center;
+	font-size: 250%;
+}
+
+body{
+	background-position: center;
+	background-color: #fffcdf;
+	background-size: 600px;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	font-family: "Monaco", Monospace;
+}
+
+#main{
+	width: 800px;
+	margin: 40px auto;
+	padding: 40px 40px;
+	border: #f69e9e 1px solid;
+	background-color: #fff;
+	border-radius: 8px;
+}
+
+/* ========= topnav（沿用主頁設定） ========= */
+.topnav {
+  background-color: #6fbb9a;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #fffcdf;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: hotpink;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #d0e35b;
+  color: white;
+}
+
+/* ========= Canvas 區域 ========= */
+#canvas {
+    display: block;
+    margin: 20px auto;
+    border: 2px dotted #94c8b1;
+    background-color: #ffffff;
+}
+
+/* ========= 控制區域 ========= */
+.controls {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #6fbb9a;
+}
+
+.controls label {
+    margin-right: 20px;
+}
+
+#value {
+    font-weight: bold;
+    color: hotpink;
+}
+
+/* ========= 按鈕設計：符合主題色 ========= */
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #6fbb9a;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: hotpink;
+}
+
+button:active {
+    background-color: #d0e35b;
+}
+
+/* ========= 產生圖片顯示區 ========= */
+#show {
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+    border: 1px solid #f69e9e;
+}
