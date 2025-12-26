@@ -1,20 +1,46 @@
 h1{
 	color: #6fbb9a;
-	text-align: center ;
-	font-size: 250%;
+	text-align: center;
+	font-size: 260%;
+	font-family: "Trebuchet MS", "Monaco", monospace;
+	letter-spacing: 3px;   /* 拉開字距 */
+	margin-top: 20px;
 }
 h2{
 	color: #6fbb9a;
-    text-align: center ;
-	border: #94c8b1 1px dotted;
-	border-left: #d0e35b 10px solid;
-	padding: 5px 20px;
-	margin-bottom: 0;
-    font-family: "Monaco", Monospace;
+	text-align: center;
+	border: #94c8b1 2px dotted;
+	border-left: #d0e35b 12px solid;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	font-family: "Trebuchet MS", "Monaco", monospace;
+	border-radius: 10px;
+	background-color: #f7fff5;
 }
 p{
-    font-family: "Monaco", Monospace;
+	font-family: "Arial", "Microsoft JhengHei", sans-serif;
+	font-size: 16px;
+	line-height: 1.8;
+	color: #444;
+	margin: 12px 0;
 }
+ul, ol{
+	font-family: "Arial", "Microsoft JhengHei", sans-serif;
+	font-size: 15px;
+	line-height: 1.8;
+	color: #555;
+	margin-left: 30px;
+}
+li{
+	margin-bottom: 6px;
+}
+
+img{
+	display: block;
+	margin: 15px auto;
+	border-radius: 12px;
+}
+
 body{
 	background-position: center;
 	background-color: #fffcdf;
@@ -22,55 +48,52 @@ body{
 	background-repeat: no-repeat;
 	background-attachment: fixed; 
 }
+
+
 a {
   font-weight: bold;
 }
 a:link {
   color: hotpink;
 }
-
 a:visited {
   color: rgb(57, 204, 57);
 }
-
 a:hover {
   color: hotpink;
 }
 a:active {
   color: blue;
 }
+
 #main{
-	width: 798px;
-	margin: 40px auto;
-	padding: 40px 80px;
-	border: #f69e9e 1px solid;
-	background-color: #fff;
+	width: 800px;
+	margin: 40px auto;          /* 水平置中 */
+	padding: 40px 60px;
+	border: #f69e9e 2px solid;
+	border-radius: 20px;
+	background-color: #ffffff;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* 陰影 */
 }
 
-/* Add a light green background color to the top navigation */
+
 .topnav {
-  background-color: #6fbb9a;  /* Matching the color of h1 and h2 */
+  background-color: #6fbb9a;
   overflow: hidden;
 }
-
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #fffcdf; /* Light text to contrast against the green background */
+  color: #fffcdf;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
-
-/* Change the color of links on hover */
 .topnav a:hover {
-  background-color: hotpink;  /* Hotpink hover effect from the body a style */
+  background-color: hotpink;
   color: white;
 }
-
-/* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #d0e35b;  /* Bright yellow-green to match the active link style */
+  background-color: #d0e35b;
   color: white;
 }
