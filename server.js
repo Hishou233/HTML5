@@ -53,7 +53,7 @@ app.post('/add-message', (req, res) => {
 });
 
 app.set('view engine', 'ejs');
-// --- 路由 3. 個人頁面展示  ---
+// --- 路由 C: 個人頁面展示  ---
 app.get('/profile/:username', (req, res) => {  
     // 1. 抓取網址上的參數
     const username = req.params.username;
@@ -65,25 +65,20 @@ app.get('/profile/:username', (req, res) => {
             console.error('查詢使用者失敗:', err);
             return res.status(500).send('伺服器發生錯誤');
         }
-
         // 2-2. 檢查有沒有找到人
         if (users.length === 0) {
             return res.status(404).send('<h1>404 - 查無此人</h1>');
         }
-
         // 3. 找到了！取出使用者資料
         const user = users[0];
-
         // 4. 第二步：拿這個人的 user_id 去 posts 資料庫找貼文
         const sqlPosts = 'SELECT content FROM posts WHERE user_id = ?';
-       
         connection.query(sqlPosts, [user.user_id], (err, posts) => {            
             // 4-1. 檢查貼文查詢錯誤
             if (err) {
                 console.error('查詢貼文失敗:', err);
                 return res.status(500).send('讀取貼文失敗');
             }
-
             // 5. 資料整形 (Mapping)
             const userData = {
                 name: user.display_name,    
@@ -93,7 +88,6 @@ app.get('/profile/:username', (req, res) => {
                 // 把資料庫撈出來的物件陣列，轉成 EJS 看得懂的純文字陣列
                 posts: posts.map(row => row.content)
             };
-
             // 6. 渲染畫面
             // 重點：除了 data 之外，我們多傳了 id (user.username)
             // 這樣 edit.ejs 裡的「修改按鈕」才知道要連去哪裡
@@ -115,7 +109,6 @@ app.get('/search', (req, res) => {
   }
   // 1. 接球：從網址問號後面抓出 keyword
   const keyword = req.query.keyword;
-
   // 2. 處理：去資料庫檢查有沒有這個 username
   // SQL: 選取所有資料，條件是 username 等於關鍵字
   const sql = 'SELECT * FROM users WHERE username = ?';
@@ -124,7 +117,6 @@ app.get('/search', (req, res) => {
           console.error(err);
           return res.send('資料庫搜尋錯誤');
       }
-
       // 3. 判斷有沒有找到人
       if (results.length > 0) {
           // 有這個人，直接跳轉 (Redirect) 到他的個人頁面
@@ -143,7 +135,6 @@ app.get('/edit/:username', (req, res) => {
   // 我們需要先從資料庫抓出「目前的簡介」，這樣使用者才不用全部重打
   connection.query('SELECT bio FROM users WHERE username = ?', [username], (err, results) => {
       if (err) return res.send('讀取資料錯誤');
-
       if (results.length > 0) {
           // 渲染 edit.ejs
           // id: 傳過去放在 hidden input 用的
@@ -164,7 +155,6 @@ app.post('/update-bio', (req, res) => {
   // 2. 修改資料庫 (最重要的一步！)
   // SQL: 更新 users 表格，設定 bio 為新值，條件是 username 符合
   const sql = 'UPDATE users SET bio = ? WHERE username = ?';
-
   connection.query(sql, [newBio, username], (err, results) => {
       if (err) {
           console.error(err);

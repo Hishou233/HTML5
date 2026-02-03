@@ -1,7 +1,7 @@
 var canvas = document.getElementById('canvas'); // 取得畫布元素
 var ctx = canvas.getContext('2d'); // 使用2D繪圖
 var toshow = document.getElementById('toshow'); // 定義"產生圖片"
-var show = document.getElementById('show'); 	// 定義"顯示圖"
+var show = document.getElementById('show'); 	// 定義"顯示圖片"
 var clear = document.getElementById('clear'); // 定義"清除"
 var drawing = false;	//是否正在繪圖(預設false)
 var queue = [];		//佇列結構依序產生筆畫

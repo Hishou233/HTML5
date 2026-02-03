@@ -3,8 +3,6 @@ body{
     background-color: #fffcdf;
     font-family: "Arial", "Microsoft JhengHei", sans-serif;
 }
-
-
 .topnav {
     background-color: #6fbb9a;
     overflow: hidden;
@@ -26,8 +24,6 @@ body{
     background-color: #d0e35b;
     color: white;
 }
-
-
 h1{
     text-align: center;
     color: #6fbb9a;

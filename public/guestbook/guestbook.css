@@ -9,7 +9,6 @@ body {
     margin: 40px auto;
     padding: 0 20px;
 }
-
 h1 {
     color: #6fbb9a;
     text-align: center;
@@ -23,7 +22,6 @@ h3 {
     font-family: "Monaco", Monospace;
     background-color: #fff;
 }
-
 
 .topnav {
     background-color: #6fbb9a;
@@ -54,12 +52,9 @@ h3 {
     border: #f69e9e 1px solid;
     margin-bottom: 30px;
 }
-
-
 .form-group {
     margin-bottom: 15px;
 }
-
 label {
     display: block;
     margin-bottom: 5px;
@@ -76,8 +71,6 @@ textarea {
     font-family: "Monaco", "微軟正黑體";
     background-color: #fffcdf;
 }
-
-
 button {
     background-color: #6fbb9a;
     color: white;
@@ -88,7 +81,6 @@ button {
     font-size: 16px;
     transition: 0.25s;
 }
-
 button:hover {
     background-color: hotpink;
 }
@@ -106,13 +98,11 @@ button:active {
     margin-bottom: 15px;
     font-family: "Monaco", "微軟正黑體";
 }
-
 .message-item small {
     color: #6fbb9a;
     display: block;
     margin-top: 5px;
 }
-
 hr {
     border: none;
     border-top: 1px solid #f69e9e;
